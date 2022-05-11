@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docker 入门 | I&#39;m Alex</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="123">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.f9dc4244.css" as="style"><link rel="preload" href="/blog/assets/js/app.0c328148.js" as="script"><link rel="preload" href="/blog/assets/js/2.ef27732c.js" as="script"><link rel="preload" href="/blog/assets/js/28.c97a693d.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.4fc174d0.js"><link rel="prefetch" href="/blog/assets/js/11.4b9e5083.js"><link rel="prefetch" href="/blog/assets/js/12.8c45d22b.js"><link rel="prefetch" href="/blog/assets/js/13.a7706ab2.js"><link rel="prefetch" href="/blog/assets/js/14.9e9431ac.js"><link rel="prefetch" href="/blog/assets/js/15.191a76b5.js"><link rel="prefetch" href="/blog/assets/js/16.ade73102.js"><link rel="prefetch" href="/blog/assets/js/17.455cea14.js"><link rel="prefetch" href="/blog/assets/js/18.cf9594d9.js"><link rel="prefetch" href="/blog/assets/js/19.bdb0a3c4.js"><link rel="prefetch" href="/blog/assets/js/20.fd4b444e.js"><link rel="prefetch" href="/blog/assets/js/21.01379a95.js"><link rel="prefetch" href="/blog/assets/js/22.771705d3.js"><link rel="prefetch" href="/blog/assets/js/23.00e498db.js"><link rel="prefetch" href="/blog/assets/js/24.02bc0deb.js"><link rel="prefetch" href="/blog/assets/js/25.1bb2541a.js"><link rel="prefetch" href="/blog/assets/js/26.970f0106.js"><link rel="prefetch" href="/blog/assets/js/27.9e87a29d.js"><link rel="prefetch" href="/blog/assets/js/29.9963f0cf.js"><link rel="prefetch" href="/blog/assets/js/3.e2e3b0e7.js"><link rel="prefetch" href="/blog/assets/js/30.afb8e3c4.js"><link rel="prefetch" href="/blog/assets/js/31.ac96d13a.js"><link rel="prefetch" href="/blog/assets/js/32.91959568.js"><link rel="prefetch" href="/blog/assets/js/33.bc02d183.js"><link rel="prefetch" href="/blog/assets/js/34.9f4bdea4.js"><link rel="prefetch" href="/blog/assets/js/35.85cd64bd.js"><link rel="prefetch" href="/blog/assets/js/36.9efafaae.js"><link rel="prefetch" href="/blog/assets/js/37.13f25b82.js"><link rel="prefetch" href="/blog/assets/js/38.7f91a217.js"><link rel="prefetch" href="/blog/assets/js/39.15f7b5b6.js"><link rel="prefetch" href="/blog/assets/js/4.108b56bf.js"><link rel="prefetch" href="/blog/assets/js/40.07a706de.js"><link rel="prefetch" href="/blog/assets/js/41.a9ad9f4f.js"><link rel="prefetch" href="/blog/assets/js/5.e004f495.js"><link rel="prefetch" href="/blog/assets/js/6.59736120.js"><link rel="prefetch" href="/blog/assets/js/7.ce721f24.js"><link rel="prefetch" href="/blog/assets/js/8.e707e9a2.js"><link rel="prefetch" href="/blog/assets/js/9.9f7d8719.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.f9dc4244.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/logo.png" alt="I'm Alex" class="logo"> <span class="site-name can-hide">I'm Alex</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java ☕️" class="dropdown-title"><span class="title">Java ☕️</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java ☕️" class="mobile-dropdown-title"><span class="title">Java ☕️</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/java/基础/ConcurrentHashMap.html" class="nav-link">
+  ConcurrentHashMap
+</a></li><li class="dropdown-subitem"><a href="/blog/java/基础/hashmap.html" class="nav-link">
+  HashMap
+</a></li><li class="dropdown-subitem"><a href="/blog/java/基础/exception.html" class="nav-link">
+  Exception
+</a></li></ul></li><li class="dropdown-item"><h4>
+          虚拟机
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/java/jvm/内存模型.html" class="nav-link">
+  内存模型
+</a></li><li class="dropdown-subitem"><a href="/blog/java/jvm/垃圾回收.html" class="nav-link">
+  垃圾回收
+</a></li><li class="dropdown-subitem"><a href="/blog/java/jvm/类加载机制.html" class="nav-link">
+  类加载机制
+</a></li><li class="dropdown-subitem"><a href="/blog/java/jvm/抄作业.html" class="nav-link">
+  抄作业
+</a></li></ul></li><li class="dropdown-item"><h4>
+          多线程
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/java/多线程/多线程基础.html" class="nav-link">
+  多线程基础
+</a></li><li class="dropdown-subitem"><a href="/blog/java/多线程/CAS.html" class="nav-link">
+  CAS
+</a></li><li class="dropdown-subitem"><a href="/blog/java/多线程/reentrantLock.html" class="nav-link">
+  ReentrantLock
+</a></li><li class="dropdown-subitem"><a href="/blog/java/多线程/synchornized.html" class="nav-link">
+  Synchornized
+</a></li><li class="dropdown-subitem"><a href="/blog/java/多线程/volatile.html" class="nav-link">
+  Volatile
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Nio
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/java/Nio/01_nio多路复用.html" class="nav-link">
+  操作系统的多路复用
+</a></li><li class="dropdown-subitem"><a href="/blog/java/Nio/02_NIO&amp;Netty.html" class="nav-link">
+  Java NIO
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MySql
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/MYSQL/01.html" class="nav-link">
+  01
+</a></li><li class="dropdown-subitem"><a href="/blog/MYSQL/02.html" class="nav-link">
+  02
+</a></li><li class="dropdown-subitem"><a href="/blog/MYSQL/03.html" class="nav-link">
+  03
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分布式" class="dropdown-title"><span class="title">分布式</span> <span class="arrow down"></span></button> <button type="button" aria-label="分布式" class="mobile-dropdown-title"><span class="title">分布式</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MQ
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/分布式/mq/rabbit.html" class="nav-link">
+  Rabbit
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/mq/rocket.html" class="nav-link">
+  Rocket
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/mq/抄作业.html" class="nav-link">
+  抄作业
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Redis
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/分布式/redis/01_基础.html" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/redis/02_进阶.html" class="nav-link">
+  进阶
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/redis/03_集群.html" class="nav-link">
+  集群
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/redis/04_6版本.html" class="nav-link">
+  6版本
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/redis/czy.html" class="nav-link">
+  抄作业
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Zookeeper
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/分布式/zk/zk.html" class="nav-link">
+  Zookeeper
+</a></li></ul></li><li class="dropdown-item"><h4>
+          分布式一致性方案
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/分布式/分布式一致性/paxos.html" class="nav-link">
+  Paxos
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/分布式一致性/zookeeper.html" class="nav-link">
+  Zookeeper
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/分布式一致性/分布式事务.html" class="nav-link">
+  分布式事务
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/分布式一致性/分布式锁.html" class="nav-link">
+  分布式锁
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🔗" class="dropdown-title"><span class="title">🔗</span> <span class="arrow down"></span></button> <button type="button" aria-label="🔗" class="mobile-dropdown-title"><span class="title">🔗</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.injdk.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  JDK下载
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          框架文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://mp.baomidou.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MyBatis-Plus
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://seata.io/zh-cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Alibaba Seata
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://github.com/alibaba/Sentinel/wiki/%E4%BB%8B%E7%BB%8D" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Alibaba Sentinel
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://nacos.io/zh-cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Alibaba Nacos
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://dubbo.apache.org/zh-cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Apache Dubbo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://skywalking.apache.org/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Apache SkyWalking
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Element UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://react.docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  React
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Ant Design
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://antv.vision/zh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Ant V
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Iconfont 矢量图库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          开发工具包
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="http://mvnrepository.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Maven Repository
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.hutool.cn/docs/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Hutool
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          在线工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://atool.vip/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线工具Web
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.sojson.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  JSON格式化
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Contact" class="dropdown-title"><span class="title">Contact</span> <span class="arrow down"></span></button> <button type="button" aria-label="Contact" class="mobile-dropdown-title"><span class="title">Contact</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/xiaoli9965" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/XiaoLi9965" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java ☕️" class="dropdown-title"><span class="title">Java ☕️</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java ☕️" class="mobile-dropdown-title"><span class="title">Java ☕️</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/java/基础/ConcurrentHashMap.html" class="nav-link">
+  ConcurrentHashMap
+</a></li><li class="dropdown-subitem"><a href="/blog/java/基础/hashmap.html" class="nav-link">
+  HashMap
+</a></li><li class="dropdown-subitem"><a href="/blog/java/基础/exception.html" class="nav-link">
+  Exception
+</a></li></ul></li><li class="dropdown-item"><h4>
+          虚拟机
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/java/jvm/内存模型.html" class="nav-link">
+  内存模型
+</a></li><li class="dropdown-subitem"><a href="/blog/java/jvm/垃圾回收.html" class="nav-link">
+  垃圾回收
+</a></li><li class="dropdown-subitem"><a href="/blog/java/jvm/类加载机制.html" class="nav-link">
+  类加载机制
+</a></li><li class="dropdown-subitem"><a href="/blog/java/jvm/抄作业.html" class="nav-link">
+  抄作业
+</a></li></ul></li><li class="dropdown-item"><h4>
+          多线程
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/java/多线程/多线程基础.html" class="nav-link">
+  多线程基础
+</a></li><li class="dropdown-subitem"><a href="/blog/java/多线程/CAS.html" class="nav-link">
+  CAS
+</a></li><li class="dropdown-subitem"><a href="/blog/java/多线程/reentrantLock.html" class="nav-link">
+  ReentrantLock
+</a></li><li class="dropdown-subitem"><a href="/blog/java/多线程/synchornized.html" class="nav-link">
+  Synchornized
+</a></li><li class="dropdown-subitem"><a href="/blog/java/多线程/volatile.html" class="nav-link">
+  Volatile
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Nio
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/java/Nio/01_nio多路复用.html" class="nav-link">
+  操作系统的多路复用
+</a></li><li class="dropdown-subitem"><a href="/blog/java/Nio/02_NIO&amp;Netty.html" class="nav-link">
+  Java NIO
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MySql
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/MYSQL/01.html" class="nav-link">
+  01
+</a></li><li class="dropdown-subitem"><a href="/blog/MYSQL/02.html" class="nav-link">
+  02
+</a></li><li class="dropdown-subitem"><a href="/blog/MYSQL/03.html" class="nav-link">
+  03
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分布式" class="dropdown-title"><span class="title">分布式</span> <span class="arrow down"></span></button> <button type="button" aria-label="分布式" class="mobile-dropdown-title"><span class="title">分布式</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MQ
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/分布式/mq/rabbit.html" class="nav-link">
+  Rabbit
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/mq/rocket.html" class="nav-link">
+  Rocket
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/mq/抄作业.html" class="nav-link">
+  抄作业
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Redis
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/分布式/redis/01_基础.html" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/redis/02_进阶.html" class="nav-link">
+  进阶
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/redis/03_集群.html" class="nav-link">
+  集群
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/redis/04_6版本.html" class="nav-link">
+  6版本
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/redis/czy.html" class="nav-link">
+  抄作业
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Zookeeper
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/分布式/zk/zk.html" class="nav-link">
+  Zookeeper
+</a></li></ul></li><li class="dropdown-item"><h4>
+          分布式一致性方案
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/分布式/分布式一致性/paxos.html" class="nav-link">
+  Paxos
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/分布式一致性/zookeeper.html" class="nav-link">
+  Zookeeper
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/分布式一致性/分布式事务.html" class="nav-link">
+  分布式事务
+</a></li><li class="dropdown-subitem"><a href="/blog/分布式/分布式一致性/分布式锁.html" class="nav-link">
+  分布式锁
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🔗" class="dropdown-title"><span class="title">🔗</span> <span class="arrow down"></span></button> <button type="button" aria-label="🔗" class="mobile-dropdown-title"><span class="title">🔗</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.injdk.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  JDK下载
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          框架文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://mp.baomidou.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MyBatis-Plus
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://seata.io/zh-cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Alibaba Seata
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://github.com/alibaba/Sentinel/wiki/%E4%BB%8B%E7%BB%8D" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Alibaba Sentinel
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://nacos.io/zh-cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Alibaba Nacos
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://dubbo.apache.org/zh-cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Apache Dubbo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://skywalking.apache.org/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Apache SkyWalking
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Element UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://react.docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  React
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Ant Design
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://antv.vision/zh" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Ant V
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Iconfont 矢量图库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          开发工具包
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="http://mvnrepository.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Maven Repository
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.hutool.cn/docs/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Hutool
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          在线工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://atool.vip/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线工具Web
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.sojson.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  JSON格式化
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Contact" class="dropdown-title"><span class="title">Contact</span> <span class="arrow down"></span></button> <button type="button" aria-label="Contact" class="mobile-dropdown-title"><span class="title">Contact</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/xiaoli9965" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/XiaoLi9965" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Docker 入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#一、docker安装" class="sidebar-link">一、Docker安装</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#二、docker-命令" class="sidebar-link">二、docker 命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_1-镜像相关命令" class="sidebar-link">1. 镜像相关命令</a></li><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_2-容器相关命令" class="sidebar-link">2. 容器相关命令</a></li><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_3-2-守护式方式创建容器" class="sidebar-link">3.2 守护式方式创建容器</a></li></ul></li><li><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#三、docker应用部署" class="sidebar-link">三、docker应用部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_1-mysql部署" class="sidebar-link">1. mysql部署</a></li><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#docker-mysql-8版本部署" class="sidebar-link">Docker Mysql：8版本部署</a></li><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_2-tomcat部署" class="sidebar-link">2. tomcat部署</a></li><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_3-nginx部署" class="sidebar-link">3. Nginx部署</a></li></ul></li><li><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#四、迁移与备份" class="sidebar-link">四、迁移与备份</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_1-容器保存为镜像" class="sidebar-link">1. 容器保存为镜像</a></li></ul></li><li><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_2-镜像备份" class="sidebar-link">2. 镜像备份</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_3-镜像恢复与迁移" class="sidebar-link">3.镜像恢复与迁移</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#五、dockerfile" class="sidebar-link">五、Dockerfile</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_1-常用命令" class="sidebar-link">1. 常用命令</a></li><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_2-使用dockerfile构建一个镜像" class="sidebar-link">2. 使用dockerfile构建一个镜像</a></li></ul></li><li><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#六、创建docker私有仓库" class="sidebar-link">六、创建Docker私有仓库</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_1-创建私有仓库服务" class="sidebar-link">1. 创建私有仓库服务</a></li><li class="sidebar-sub-header"><a href="/blog/%E4%BA%91%E8%AE%A1%E7%AE%97/%E8%99%9A%E6%8B%9F%E5%8C%96/docker.html#_2-上传镜像到私有仓库" class="sidebar-link">2. 上传镜像到私有仓库</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="一、docker安装"><a href="#一、docker安装" class="header-anchor">#</a> 一、Docker安装</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#yum更新到最新</span>
+<span class="token function">sudo</span> yum update
+<span class="token comment">#安装yum-util提供的yum-config-mapper依赖</span>
+<span class="token function">sudo</span> yum <span class="token function">install</span> -y yum-utils device-mapper-persistent-data lvm2
+<span class="token comment">#设置docker的yum源为阿里云</span>
+<span class="token function">sudo</span> yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+<span class="token comment">#安装docker-ce</span>
+<span class="token function">sudo</span> yum <span class="token function">install</span> docker-ce
+<span class="token comment">#查看docker -v 版本</span>
+<span class="token function">docker</span> -v
+
+<span class="token comment">#设置docker开机自动启动</span>
+systemctl <span class="token builtin class-name">enable</span> <span class="token function">docker</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>
+#更改镜像,提升下载速度
+vim daemon.json 
+#加入
+{
+- - &quot;registry-mirrors&quot;: [&quot;https://docker.mirrors.ustc.edu.cn&quot;]
+}
+#重启服务 
+systemctl restart docker
+
+</code></pre></div><h2 id="二、docker-命令"><a href="#二、docker-命令" class="header-anchor">#</a> 二、docker 命令</h2> <table><thead><tr><th style="text-align:center;">操作</th> <th style="text-align:left;">命令</th></tr></thead> <tbody><tr><td style="text-align:center;">查看状态</td> <td style="text-align:left;"><code>systemctl status doker</code></td></tr> <tr><td style="text-align:center;">启动</td> <td style="text-align:left;"><code>systemctl state doker</code></td></tr> <tr><td style="text-align:center;">停止</td> <td style="text-align:left;"><code>systemctl stop doker</code></td></tr> <tr><td style="text-align:center;">重启</td> <td style="text-align:left;"><code>systemctl restart doker</code></td></tr></tbody></table> <h3 id="_1-镜像相关命令"><a href="#_1-镜像相关命令" class="header-anchor">#</a> 1. 镜像相关命令</h3> <table><thead><tr><th style="text-align:center;">操作</th> <th style="text-align:left;">命令</th> <th style="text-align:left;">描述</th></tr></thead> <tbody><tr><td style="text-align:center;">查看镜像</td> <td style="text-align:left;"><code>docker images</code></td> <td style="text-align:left;"></td></tr> <tr><td style="text-align:center;">搜索镜像</td> <td style="text-align:left;"><code>docker search 镜像名称</code></td> <td style="text-align:left;"><code>NAME</code>:镜像名称 <br><code>DESCRIPTION</code>:镜像描述<br><code>STARS</code>:好评度<br><code>OFFICIAL</code>:是否是官方提供的<br><code>AUTOMATED</code>:是否自动构建</td></tr> <tr><td style="text-align:center;">拉取镜像</td> <td style="text-align:left;"><code>docker pull 镜像名称</code></td> <td style="text-align:left;">例:<code>docker pull mysql:5.7</code> 冒号后面可以加上标签号<br>例:<code>docker pull mysql</code> 不加默认拉取最新的版本</td></tr> <tr><td style="text-align:center;">删除镜像</td> <td style="text-align:left;"><code>docker rmi 镜像id</code></td> <td style="text-align:left;">删除所有镜像 docker rmi  `docker images -q``(去掉最后一个符号)<br> 删除镜像时有运行的容器的话需要先删除容器再删除镜像</td></tr></tbody></table> <h3 id="_2-容器相关命令"><a href="#_2-容器相关命令" class="header-anchor">#</a> 2. 容器相关命令</h3> <div class="custom-block tip"><p class="custom-block-title">查看容器 docker ps 查看容器 ps 查看所有容器 ps -a</p></div> <div class="custom-block tip"><p class="custom-block-title">操作容器 docker 命令 容器名</p> <ul><li>启动 start</li> <li>停止 stop</li> <li>重启 restart</li></ul></div> <div class="custom-block tip"><p class="custom-block-title">创建容器命令 docker run</p> <ul><li>一个-代表不用填参数,两个-表示必须要参数</li> <li>-i 运行容器</li> <li>-t 启动后进入容器客户端</li> <li>--name 为容器命名 --name=sql5.7</li> <li>-v 映射目录 $1宿主机目录:容器目录</li> <li>-d 后台运行</li> <li>-p 端口映射 $1宿主机端口 $2容器端口</li></ul></div> <div class="custom-block tip"><p class="custom-block-title">进入容器 docker exec</p> <ul><li>例:docker exec -it mycentos /bin/bash</li> <li>exit退出容器</li></ul></div> <div class="custom-block tip"><p class="custom-block-title">退出容器 exit</p> <ul><li>例:#docker exec -it mycentos /bin/bash</li> <li><h1 id="exit退出容器"><a href="#exit退出容器" class="header-anchor">#</a> exit退出容器</h1></li></ul></div> <div class="custom-block tip"><p class="custom-block-title">文件拷贝 docker cp</p> <ul><li>拷入例:doker cp /opt/xxx.txt mycentos:/usr/local</li> <li>$1宿主机文件 $2镜像名:目录</li> <li>拷出例:doker cp mycentos:/usr/local /opt/xxx.txt</li> <li>与拷入反着写即可 $1镜像名:目录 $2宿主机目录</li></ul></div> <div class="custom-block tip"><p class="custom-block-title">查看容器参数 docker inspect 容器名</p> <ul><li>直接使用命令返回的JSON格式数据</li> <li>格式化提取需要参数: docker inspect mycentos2 --format='{.NetworkSettings.IPAddress}'</li></ul></div> <div class="custom-block tip"><p class="custom-block-title">删除容器 docker rm 容器名</p> <ul><li>必须先停掉才能移除</li></ul></div> <h3 id="_3-2-守护式方式创建容器"><a href="#_3-2-守护式方式创建容器" class="header-anchor">#</a> 3.2 守护式方式创建容器</h3> <p><code>创建后为后台方式运行,使用docker exec 进入到容器,exit退出容器后容器不会退出运行</code></p> <p>创建容器:<code>docker run -di --name=mycentos2 centos:7</code></p> <p><img src="https://img-blog.csdnimg.cn/20190414144127445.png" alt="查看容器">
+进入这个容器:<code>docker exec -it mycentos2 /bin/bash</code></p> <h2 id="三、docker应用部署"><a href="#三、docker应用部署" class="header-anchor">#</a> 三、docker应用部署</h2> <h3 id="_1-mysql部署"><a href="#_1-mysql部署" class="header-anchor">#</a> 1. mysql部署</h3> <div class="language-js extra-class"><pre class="language-js"><code>#<span class="token number">1.</span>
+拉取镜像
+docker
+pull
+centos <span class="token operator">/</span> mysql <span class="token operator">-</span> <span class="token number">57</span> <span class="token operator">-</span> centos7
+#<span class="token number">2.</span>
+创建容器
+docker
+run <span class="token operator">-</span> d <span class="token operator">-</span> i<span class="token operator">--</span>
+name <span class="token operator">=</span> demoMysql <span class="token operator">-</span> p
+<span class="token number">3306</span>
+<span class="token operator">:</span>
+<span class="token number">3306</span> <span class="token operator">-</span> e
+<span class="token constant">MYSQL_ROOT_PASSWORD</span> <span class="token operator">=</span> xiaoli
+centos <span class="token operator">/</span> mysql <span class="token operator">-</span> <span class="token number">57</span> <span class="token operator">-</span> centos7
+#<span class="token number">3.</span>
+查看状态
+docker
+ps
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20190414152213580.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMTQ3Mjc1,size_16,color_FFFFFF,t_70" alt="测试连接"></p> <h3 id="docker-mysql-8版本部署"><a href="#docker-mysql-8版本部署" class="header-anchor">#</a> Docker Mysql：8版本部署</h3> <div class="language-shell extra-class"><pre class="language-shell"><code> <span class="token function">docker</span> pull mysql
+ <span class="token function">docker</span> run --name dockermysql  -p <span class="token number">3306</span>:3306 -e <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span><span class="token number">123456</span> -d mysql
+<span class="token comment">##进入容器</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it dockermysql <span class="token function">bash</span>
+<span class="token comment">##登录</span>
+mysql -u root -p
+<span class="token comment">##配置远程登录</span>
+use mysql<span class="token punctuation">;</span>
+grant all privileges on *.* to <span class="token string">'root'</span>@<span class="token string">'%'</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> Host,User,plugin from user<span class="token punctuation">;</span>
+<span class="token comment">##修改Root登录验证</span>
+alter user <span class="token string">'root'</span>@<span class="token string">'%'</span> identified with mysql_native_password by <span class="token string">'123456'</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_2-tomcat部署"><a href="#_2-tomcat部署" class="header-anchor">#</a> 2. tomcat部署</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#1.拉取镜像</span>
+<span class="token function">docker</span> pull tomcat:7
+<span class="token comment">#2.创建容器</span>
+<span class="token function">docker</span> run -di --name<span class="token operator">=</span>demoTomcat -p <span class="token number">8080</span>:8080 -v /usr/local/webapps:/usr/local/tomcat/webapps tomcat:7
+<span class="token comment">#3.访问测试</span>
+http://192.168.200.200:9000/
+<span class="token comment">#4.由于使用了 -v目录挂载 所以访问时出现404,这时需要在宿主机/usr/local/webapps/中添加应用</span>
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20190414153649219.png" alt="在这里插入图片描述"></p> <h3 id="_3-nginx部署"><a href="#_3-nginx部署" class="header-anchor">#</a> 3. Nginx部署</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#1.拉取镜像</span>
+<span class="token function">docker</span> pull nginx
+<span class="token comment">#2.创建容器</span>
+<span class="token function">docker</span> run -di --name<span class="token operator">=</span>demoNginx -p <span class="token number">80</span>:80  nginx
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20190414154300336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMTQ3Mjc1,size_16,color_FFFFFF,t_70" alt="启动成功">
+==容器部署成功了,如何将我们的页面部署到Nginx呢?==</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#3.进入容器中设置Nginx</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it demoNginx /bin/bash
+<span class="token comment">#4 容器中:</span>
+<span class="token function">dir</span>  			<span class="token comment">#查看当前目录</span>
+<span class="token builtin class-name">cd</span> etc/nginx/  	<span class="token comment">#进入Nginx目录</span>
+<span class="token function">cat</span> nginx.conf	<span class="token comment">#查看Nginx的配置文件 可以看到 include /etc/nginx/conf.d/*.conf;</span>
+<span class="token function">cat</span> /etc/nginx/conf.d/default.conf  <span class="token comment">#查看conf.d下的配置文件 可以看到 root   /usr/share/nginx/html; 这条配置.</span>
+<span class="token builtin class-name">exit</span>
+<span class="token comment">#4 退出容器,将我们的静态页面cp到 /usr/share/nginx/html/目录即可</span>
+<span class="token comment">#在宿主机创建一个目录,并将静态页面放入次目录下</span>
+<span class="token function">mkdir</span> -p /usr/share/nginx/html/
+<span class="token comment">#将目录CP到容器中</span>
+<span class="token function">docker</span> <span class="token function">cp</span> html  demoNginx:/usr/share/nginx/
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20190414155940103.png" alt="完成"></p> <hr> <h2 id="四、迁移与备份"><a href="#四、迁移与备份" class="header-anchor">#</a> 四、迁移与备份</h2> <h3 id="_1-容器保存为镜像"><a href="#_1-容器保存为镜像" class="header-anchor">#</a> 1. 容器保存为镜像</h3> <p><code>docker commit demoNginx nginx_20190414</code>
+运行这个新保存的镜像:
+<code>docker run -di --name=demoNginx2 -p 81:80 nginx_20190414</code></p> <h2 id="_2-镜像备份"><a href="#_2-镜像备份" class="header-anchor">#</a> 2. 镜像备份</h2> <p><code>docker save -o nginx_20190414.tar nginx_20190414</code></p> <h2 id="_3-镜像恢复与迁移"><a href="#_3-镜像恢复与迁移" class="header-anchor">#</a> 3.镜像恢复与迁移</h2> <p>1.恢复之前先删除镜像跟容器
+<code>docker stop demoNginx2</code> <code>docker rm demoNginx2</code> <code>docker rmi nginx_20190414</code>
+2.恢复:
+<code>docker load -i nginx_20190414.tar</code></p> <hr> <h2 id="五、dockerfile"><a href="#五、dockerfile" class="header-anchor">#</a> 五、Dockerfile</h2> <blockquote><p>介绍:由一系列的命令和参数构成的脚本,基于基础镜像创建一个新的镜像.</p></blockquote> <h3 id="_1-常用命令"><a href="#_1-常用命令" class="header-anchor">#</a> 1. 常用命令</h3> <table><thead><tr><th style="text-align:left;">命令</th> <th style="text-align:left;">作用</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>FROM 基础镜像:标签</code></td> <td style="text-align:left;">定义基础镜像的名称和标签</td></tr> <tr><td style="text-align:left;"><code>MAINTAINER 名称</code></td> <td style="text-align:left;">版权申明,申明镜像的创建者, 可以不写</td></tr> <tr><td style="text-align:left;"><code>ENV key value</code></td> <td style="text-align:left;">设置环境变量 (可以写多条)</td></tr> <tr><td style="text-align:left;"><code>RUN 命令</code></td> <td style="text-align:left;">在运行时执行某一个命令,比如创建一个目录 (可以写多条)</td></tr> <tr><td style="text-align:left;"><code>ADD 源目录/文件 目标目录/文件</code></td> <td style="text-align:left;">将宿主机的文件复制到容器内,如果是压缩文件自动解压</td></tr> <tr><td style="text-align:left;"><code>COPY 源目录/文件 目标目录/文件</code></td> <td style="text-align:left;">将宿主机的文件复制到容器内</td></tr> <tr><td style="text-align:left;"><code>WORKDIR 目录</code></td> <td style="text-align:left;">设置容器工作目录,在登陆容器后默认进入此目录</td></tr></tbody></table> <h3 id="_2-使用dockerfile构建一个镜像"><a href="#_2-使用dockerfile构建一个镜像" class="header-anchor">#</a> 2. 使用dockerfile构建一个镜像</h3> <p><code>使用基础镜像为 centos7 以构建JDK1.8为例</code></p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#1.宿主机创建目录并放入JDK1.8</span>
+<span class="token function">mkdir</span> -p /usr/local/docker-jdk8
+<span class="token builtin class-name">cd</span> /usr/local/docker-jdk8
+<span class="token comment"># 2. 构建一个Dockerfile文件 必须叫这个名字</span>
+<span class="token function">mkdir</span> Dockerfile
+<span class="token comment"># 3. 构建  -t=构建后名称 .代表当前目录</span>
+<span class="token function">docker</span> build -t<span class="token operator">=</span><span class="token string">'jdk1.8'</span> <span class="token builtin class-name">.</span>
+<span class="token comment"># 4.查看镜像  会发现多了一个 jdk1.8的镜像</span>
+<span class="token function">docker</span> images
+
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20190414165439237.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMTQ3Mjc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <hr> <h2 id="六、创建docker私有仓库"><a href="#六、创建docker私有仓库" class="header-anchor">#</a> 六、创建Docker私有仓库</h2> <blockquote><p>用于存放企业内部应用级的镜像</p></blockquote> <h3 id="_1-创建私有仓库服务"><a href="#_1-创建私有仓库服务" class="header-anchor">#</a> 1. 创建私有仓库服务</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#1.拉取镜像</span>
+<span class="token function">docker</span> pull registry
+<span class="token comment"># 2.启动私有仓库</span>
+<span class="token function">docker</span> run  -di --name<span class="token operator">=</span>registry -p <span class="token number">5000</span>:5000 registry
+<span class="token comment"># 3. 查看是否搭建成功</span>
+访问 http://192.168.200.200:5000/v2/_catalog 有返回证明成功
+<span class="token comment"># 4.修改daemon.json配置文件 添加信任仓库地址</span>
+<span class="token function">vim</span> /etc/docker/daemon.json
+- - <span class="token string">&quot;insecure-registries&quot;</span>:<span class="token punctuation">[</span><span class="token string">&quot;http://192.168.200.200:5000&quot;</span><span class="token punctuation">]</span>
+<span class="token comment">#重启docker服务</span>
+systemctl restart <span class="token function">docker</span>
+</code></pre></div><h3 id="_2-上传镜像到私有仓库"><a href="#_2-上传镜像到私有仓库" class="header-anchor">#</a> 2. 上传镜像到私有仓库</h3> <p>1.给需要上传的镜像打一个标签 标签名为 <code>私服IP:端口:镜像名</code> <code>docker tag jdk1.8 192.168.200.200:5000/jdk1.8</code>
+2.上传到私有服务器
+<code>docker push 192.168.200.200:5000/jdk1.8</code>
+3.访问仓库是否已经存在列表中 <code>http://地址:端口/v2/_catalog</code>
+4.从私库下载 <code>docker pull 192.168.200.200:5000/jdk1.8</code></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">8/12/2021, 1:15:14 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.0c328148.js" defer></script><script src="/blog/assets/js/2.ef27732c.js" defer></script><script src="/blog/assets/js/28.c97a693d.js" defer></script>
+  </body>
+</html>
